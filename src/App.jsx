@@ -1,5 +1,4 @@
 /* eslint-disable operator-linebreak */
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
 import axios from 'axios';
 // import Login from './components/loginAndRegister/login.jsx';
