@@ -1,0 +1,15 @@
+.navbar-container {
+  width: 100%;
+}
+
+.navbar-row {
+  width: 100%;
+}
+
+.navbar-symbols {
+  position: relative;
+  margin-left: 3vh;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 900;
+}

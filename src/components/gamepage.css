@@ -1,0 +1,342 @@
+.game-container {
+  background-color: rgb(147, 146, 146);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.table-border {
+  width: 38vh;
+  height: 75vh;
+  background: rgb(49, 97, 15);
+  -moz-border-radius: 100vh / 50vh;
+  -webkit-border-radius: 100vh / 50vh;
+  border-radius: 100vh / 100vh;
+  border-style: solid;
+  border-color: rgb(29, 28, 28);
+  border-width: 2.5vh;
+  position: absolute;
+  left: 6.5vh;
+  top: 10vh;
+}
+
+.button {
+  width: 80px;
+}
+
+.button-container {
+  width: 48vh;
+  position: absolute;
+  bottom: 2vh;
+}
+
+.pot-card-1 {
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(29, 28, 28);
+  border-width: 2px;
+  border-radius: 7px;
+  width: 4.5vh;
+  margin-right: 2px;
+  position: absolute;
+  top: 45vh;
+  left: 12vh;
+}
+.pot-card-2 {
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(29, 28, 28);
+  border-width: 2px;
+  border-radius: 7px;
+  width: 4.5vh;
+  margin-right: 2px;
+  position: absolute;
+  top: 45vh;
+  left: 17vh;
+}
+.pot-card-3 {
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(29, 28, 28);
+  border-width: 2px;
+  border-radius: 7px;
+  width: 4.5vh;
+  margin-right: 2px;
+  position: absolute;
+  top: 45vh;
+  left: 22vh;
+}
+.pot-card-4 {
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(29, 28, 28);
+  border-width: 2px;
+  border-radius: 7px;
+  width: 4.5vh;
+  margin-right: 2px;
+  position: absolute;
+  top: 45vh;
+  left: 27vh;
+}
+.pot-card-5 {
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(29, 28, 28);
+  border-width: 2px;
+  border-radius: 7px;
+  width: 4.5vh;
+  margin-right: 2px;
+  position: absolute;
+  top: 45vh;
+  left: 32vh;
+}
+
+.pot-card-number {
+  position: relative;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.pot-card-suit {
+  position: relative;
+  justify-content: center;
+}
+
+.pot-name {
+  position: absolute;
+  text-align: center;
+  top: 38vh;
+  left: 24vh;
+  font-weight: 800;
+  font-size: smaller;
+  color: rgb(232, 230, 230);
+}
+
+.pot-value {
+  position: absolute;
+  text-align: center;
+  font-size: small;
+  font-weight: 800;
+  color: rgb(232, 230, 230);
+  top: 41vh;
+  left: 24vh;
+}
+
+.pot-msg {
+  position: absolute;
+  text-align: center;
+  font-size: small;
+  font-weight: 800;
+  color: rgb(232, 230, 230);
+  top: 53vh;
+  left: 18vh;
+}
+
+.dealer-button-top {
+  position: absolute;
+  font-size: smaller;
+  font-weight: bolder;
+  border-color: black;
+  border-style: solid;
+  border-radius: 3px;
+  border-radius: 50vh;
+  background-color: yellow;
+  width: 2.5vh;
+  height: 2.5vh;
+  top: 13vh;
+  left: 24vh;
+}
+
+.dealer-button-middle-top-left {
+  position: absolute;
+  font-size: smaller;
+  font-weight: bolder;
+  border-color: black;
+  border-style: solid;
+  border-radius: 3px;
+  border-radius: 50vh;
+  background-color: yellow;
+  width: 2.5vh;
+  height: 2.5vh;
+  top: 26vh;
+  left: 10vh;
+}
+
+.dealer-button-middle-top-right {
+  position: absolute;
+  font-size: smaller;
+  font-weight: bolder;
+  border-color: black;
+  border-style: solid;
+  border-radius: 3px;
+  border-radius: 50vh;
+  background-color: yellow;
+  width: 2.5vh;
+  height: 2.5vh;
+  top: 26vh;
+  left: 38.5vh;
+}
+
+.dealer-button-middle-mid-left {
+  position: absolute;
+  font-size: smaller;
+  font-weight: bolder;
+  border-color: black;
+  border-style: solid;
+  border-radius: 3px;
+  border-radius: 50vh;
+  background-color: yellow;
+  width: 2.5vh;
+  height: 2.5vh;
+  top: 46vh;
+  left: 10vh;
+}
+
+.dealer-button-middle-mid-right {
+  position: absolute;
+  font-size: smaller;
+  font-weight: bolder;
+  border-color: black;
+  border-style: solid;
+  border-radius: 3px;
+  border-radius: 50vh;
+  background-color: yellow;
+  width: 2.5vh;
+  height: 2.5vh;
+  top: 46vh;
+  left: 38.5vh;
+}
+
+.dealer-button-middle-bot-left {
+  position: absolute;
+  font-size: smaller;
+  font-weight: bolder;
+  border-color: black;
+  border-style: solid;
+  border-radius: 3px;
+  border-radius: 50vh;
+  background-color: yellow;
+  width: 2.5vh;
+  height: 2.5vh;
+  top: 67vh;
+  left: 10vh;
+}
+
+.dealer-button-middle-bot-right {
+  position: absolute;
+  font-size: smaller;
+  font-weight: bolder;
+  border-color: black;
+  border-style: solid;
+  border-radius: 3px;
+  border-radius: 50vh;
+  background-color: yellow;
+  width: 2.5vh;
+  height: 2.5vh;
+  top: 67vh;
+  left: 38.5vh;
+}
+
+.dealer-button-bottom {
+  position: absolute;
+  font-size: smaller;
+  font-weight: bolder;
+  border-color: black;
+  border-style: solid;
+  border-radius: 3px;
+  border-radius: 50vh;
+  background-color: yellow;
+  width: 2.5vh;
+  height: 2.5vh;
+  top: 79vh;
+  left: 24vh;
+}
+
+.player-top {
+  width: 10vh;
+  position: absolute;
+  top: 2.5vh;
+  left: 21.5vh;
+}
+
+.player-mid-top-left {
+  width: 10vh;
+  position: absolute;
+  top: 22vh;
+  left: 3vh;
+}
+
+.player-mid-top-right {
+  width: 10vh;
+  position: absolute;
+  top: 22vh;
+  left: 40vh;
+}
+
+.player-mid-mid-left {
+  width: 10vh;
+  position: absolute;
+  top: 42vh;
+  left: 3vh;
+}
+
+.player-mid-mid-right {
+  width: 10vh;
+  position: absolute;
+  top: 42vh;
+  left: 40vh;
+}
+
+.player-mid-btm-left {
+  width: 10vh;
+  position: absolute;
+  top: 63vh;
+  left: 3vh;
+}
+
+.player-mid-btm-right {
+  width: 10vh;
+  position: absolute;
+  top: 63vh;
+  left: 40vh;
+}
+
+.player-btm {
+  width: 10vh;
+  position: absolute;
+  top: 81vh;
+  left: 21.5vh;
+}
+
+.player-card {
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(29, 28, 28);
+  border-width: 2px;
+  border-radius: 7px;
+  margin-right: 1px;
+  width: 5vh;
+  height: 5vh;
+}
+
+.player-detail-box {
+  background-color: black;
+  color: white;
+  font-size: small;
+  border-radius: 5px;
+  border-color: white;
+  border-style: solid;
+  border-width: 3px;
+  height: 4.7vh;
+  margin-left: 1px;
+  padding-right: 1vh;
+  width: 7vh;
+}
+
+.player-name,
+.player-credit,
+.player-number,
+.player-suit {
+  position: relative;
+  justify-content: center;
+  font-weight: bold;
+}
