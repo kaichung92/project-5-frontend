@@ -33,8 +33,8 @@ export default function App() {
         <Register setUsername={setUsername} />
       )} */}
 
-      {page === 'game' && <Gamepage />}
-      {page === 'lobby' && <Lobby />}
+      {page === 'game' && <Gamepage setPage={setPage} />}
+      {page === 'lobby' && <Lobby setPage={setPage} />}
       {page === 'settings' && <Settings />}
       {page === 'stats' && <StatsPage />}
       {page !== 'game' && <NavbarCom setPage={setPage} />}

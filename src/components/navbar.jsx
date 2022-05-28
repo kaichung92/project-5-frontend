@@ -23,7 +23,7 @@ export default function NavbarCom({ setPage }) {
             </Nav.Link>
           </Col>
           <Col>
-            <Nav.Link onClick={() => setPage('game')}>
+            <Nav.Link onClick={() => setPage('settings')}>
               <span className="material-symbols-outlined navbar-symbols">
                 settings
               </span>

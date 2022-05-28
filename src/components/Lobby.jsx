@@ -6,39 +6,40 @@
 /* eslint-disable object-curly-newline */
 import React, { useState } from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
+import './navbar.css';
 
-const GetLobby = ({ tableInfo }) => {
+const GetLobby = ({ tableInfo, setPage }) => {
   const DisplayRoom = tableInfo.map((x) => {
     return (
-      <>
+      <Container className="lobby-game" onClick={() => setPage('game')}>
         <Row>
-          <Col className="col-2">
-            <a>{x.tableId}</a>
+          <Col className="col-5">
+            <a>Table ID: {x.tableId}</a>
           </Col>
           <Col>
-            <a>{x.tableName}</a>
+            <a>Table Name: {x.tableName}</a>
           </Col>
         </Row>
         <Row>
-          <Col className="col-2">
+          <Col className="col-5">
             <a>
-              {x.playerNow}/{x.playerMax}
+              In game: {x.playerNow}/{x.playerMax}
             </a>
           </Col>
           <Col>
             <a>
-              {x.blinds}/{x.blinds * 2}
+              Blinds: {x.blinds}/{x.blinds * 2}
             </a>
           </Col>
         </Row>
-      </>
+      </Container>
     );
   });
 
   return <>{DisplayRoom}</>;
 };
 
-export default function Lobby() {
+export default function Lobby({ setPage }) {
   const info = [
     {
       tableName: 'kai room',
@@ -68,7 +69,7 @@ export default function Lobby() {
 
   return (
     <Container>
-      <GetLobby tableInfo={tableInfo} />
+      <GetLobby tableInfo={tableInfo} setPage={setPage} />
     </Container>
   );
 }

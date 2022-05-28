@@ -340,3 +340,7 @@
   justify-content: center;
   font-weight: bold;
 }
+
+.back-button {
+  margin-top: 1vh;
+}

@@ -9,7 +9,7 @@ import './gamepage.css';
 // const BACKEND_URL =
 //   process.env.REACT_APP_BACKEND_URL || 'http://localhost:3004';
 
-export default function Gamepage() {
+export default function Gamepage({ setPage }) {
   return (
     <Container className="game-container">
       <Row className="table-border">oval</Row>
@@ -201,6 +201,9 @@ export default function Gamepage() {
           </Col>
         </Row>
       </Row>
+      <Button className="back-button" onClick={() => setPage('lobby')}>
+        <span className="material-symbols-outlined">arrow_back</span>
+      </Button>
     </Container>
   );
 }
