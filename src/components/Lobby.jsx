@@ -1,75 +1,57 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable operator-linebreak */
+/* eslint-disable arrow-body-style */
 /* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable arrow-body-style */
+/* eslint-dis
+able arrow-body-style */
 /* eslint-disable array-callback-return */
 /* eslint-disable no-unused-vars */
 /* eslint-disable object-curly-newline */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
 import './navbar.css';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
 
-const GetLobby = ({ tableInfo, setPage }) => {
+const BACKEND_URL =
+  process.env.REACT_APP_BACKEND_URL || 'http://localhost:3004';
+
+const GetLobby = ({ tableInfo }) => {
   const DisplayRoom = tableInfo.map((x) => {
     return (
-      <Container className="lobby-game" onClick={() => setPage('game')}>
-        <Row>
-          <Col className="col-5">
-            <a>Table ID: {x.tableId}</a>
-          </Col>
-          <Col>
-            <a>Table Name: {x.tableName}</a>
-          </Col>
-        </Row>
-        <Row>
-          <Col className="col-5">
-            <a>
-              In game: {x.playerNow}/{x.playerMax}
-            </a>
-          </Col>
-          <Col>
-            <a>
-              Blinds: {x.blinds}/{x.blinds * 2}
-            </a>
-          </Col>
-        </Row>
-      </Container>
+      <Link to={`/game/${x.id}/`} className="lobby-link">
+        <Container className="lobby-game">
+          <Row>
+            <Col className="col-5">
+              <a>Table ID: {x.id}</a>
+            </Col>
+            <Col>
+              <a>Table Name: {x.name}</a>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="col-5">
+              <a>In game: 1/{x.max_player}</a>
+            </Col>
+            <Col>
+              <a>
+                Blinds: {x.blinds}/{x.blinds * 2}
+              </a>
+            </Col>
+          </Row>
+        </Container>
+      </Link>
     );
   });
 
   return <>{DisplayRoom}</>;
 };
 
-export default function Lobby({ setPage }) {
-  const info = [
-    {
-      tableName: 'kai room',
-      playerMax: 8,
-      playerNow: 2,
-      tableId: 1,
-      blinds: 1,
-      time: 10,
-    },
-    {
-      tableName: 'paul room',
-      playerMax: 8,
-      playerNow: 2,
-      tableId: 2,
-      blinds: 2,
-      time: 15,
-    },
-  ];
-
-  const [tableInfo, setTableInfo] = useState(info);
-
-  // useEffect(() => {
-  //     axios.get("/getTableInfo").then((res) => {
-  //       const { data } = res;
-  //       setTableInfo(data);
-  //     }, []);
-
+export default function Lobby({ tableInfo, setPage }) {
   return (
     <Container>
-      <GetLobby tableInfo={tableInfo} setPage={setPage} />
+      <GetLobby tableInfo={tableInfo} />
     </Container>
   );
 }

@@ -1,33 +1,35 @@
 /* eslint-disable object-curly-newline */
 import React from 'react';
-import { Container, Navbar, Nav, Col, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
+import { Container, Navbar, Col, Row } from 'react-bootstrap';
 import './navbar.css';
 
-export default function NavbarCom({ setPage }) {
+export default function NavbarCom() {
   return (
     <Navbar bg="dark" variant="dark" fixed="bottom">
       <Container className="navbar-container">
         <Row className="navbar-row">
           <Col>
-            <Nav.Link onClick={() => setPage('stats')}>
+            <Link to="/stats">
               <span className="material-symbols-outlined navbar-symbols">
                 list_alt
               </span>
-            </Nav.Link>
+            </Link>
           </Col>
           <Col>
-            <Nav.Link onClick={() => setPage('lobby')}>
+            <Link to="/lobby">
               <span className="material-symbols-outlined navbar-symbols">
                 home
               </span>
-            </Nav.Link>
+            </Link>
           </Col>
           <Col>
-            <Nav.Link onClick={() => setPage('settings')}>
+            <Link to="/setting">
               <span className="material-symbols-outlined navbar-symbols">
                 settings
               </span>
-            </Nav.Link>
+            </Link>
           </Col>
         </Row>
       </Container>

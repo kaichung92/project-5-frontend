@@ -144,6 +144,7 @@
   height: 2.5vh;
   top: 13vh;
   left: 24vh;
+  visibility: hidden;
 }
 
 .dealer-button-middle-top-left {
@@ -159,6 +160,7 @@
   height: 2.5vh;
   top: 26vh;
   left: 10vh;
+  visibility: hidden;
 }
 
 .dealer-button-middle-top-right {
@@ -174,6 +176,7 @@
   height: 2.5vh;
   top: 26vh;
   left: 38.5vh;
+  visibility: hidden;
 }
 
 .dealer-button-middle-mid-left {
@@ -189,6 +192,7 @@
   height: 2.5vh;
   top: 46vh;
   left: 10vh;
+  visibility: hidden;
 }
 
 .dealer-button-middle-mid-right {
@@ -204,6 +208,7 @@
   height: 2.5vh;
   top: 46vh;
   left: 38.5vh;
+  visibility: hidden;
 }
 
 .dealer-button-middle-bot-left {
@@ -219,6 +224,7 @@
   height: 2.5vh;
   top: 67vh;
   left: 10vh;
+  visibility: hidden;
 }
 
 .dealer-button-middle-bot-right {
@@ -234,6 +240,7 @@
   height: 2.5vh;
   top: 67vh;
   left: 38.5vh;
+  visibility: hidden;
 }
 
 .dealer-button-bottom {
@@ -249,6 +256,7 @@
   height: 2.5vh;
   top: 79vh;
   left: 24vh;
+  visibility: hidden;
 }
 
 .player-top {
@@ -256,6 +264,7 @@
   position: absolute;
   top: 2.5vh;
   left: 21.5vh;
+  visibility: hidden;
 }
 
 .player-mid-top-left {
@@ -263,6 +272,7 @@
   position: absolute;
   top: 22vh;
   left: 3vh;
+  visibility: hidden;
 }
 
 .player-mid-top-right {
@@ -270,6 +280,7 @@
   position: absolute;
   top: 22vh;
   left: 40vh;
+  visibility: hidden;
 }
 
 .player-mid-mid-left {
@@ -277,6 +288,7 @@
   position: absolute;
   top: 42vh;
   left: 3vh;
+  visibility: hidden;
 }
 
 .player-mid-mid-right {
@@ -284,6 +296,7 @@
   position: absolute;
   top: 42vh;
   left: 40vh;
+  visibility: hidden;
 }
 
 .player-mid-btm-left {
@@ -291,6 +304,7 @@
   position: absolute;
   top: 63vh;
   left: 3vh;
+  visibility: hidden;
 }
 
 .player-mid-btm-right {
@@ -298,6 +312,7 @@
   position: absolute;
   top: 63vh;
   left: 40vh;
+  visibility: hidden;
 }
 
 .player-btm {
@@ -305,6 +320,7 @@
   position: absolute;
   top: 81vh;
   left: 21.5vh;
+  visibility: hidden;
 }
 
 .player-card {
@@ -343,4 +359,12 @@
 
 .back-button {
   margin-top: 1vh;
+}
+
+.add {
+  visibility: visible;
+}
+
+.dealer {
+  visibility: visible;
 }
